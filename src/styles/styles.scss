@@ -144,6 +144,10 @@ body {
     .textthree {
       @include flex-column;
       justify-content: center;
+
+      p {
+        margin-left: -5rem;
+      }
     }
 
     .imageone {
