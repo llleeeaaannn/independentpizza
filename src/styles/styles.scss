@@ -102,13 +102,12 @@ body {
   @include flex-column;
   align-items: center;
   gap: 5rem;
-  height: 300vh;
-  padding: 10rem;
+  padding: 7.5rem 10rem;
   font-family: 'Montserrat';
 
   section {
     @include flex-row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10%;
     width: 100%;
 
@@ -131,6 +130,34 @@ body {
     .textone {
       @include flex-column;
       justify-content: space-between;
+
+      :last-child {
+        margin-bottom: 5rem;
+      }
+    }
+
+    .texttwo {
+      @include flex-column;
+      justify-content: space-around;
+    }
+
+    .textthree {
+      @include flex-column;
+      justify-content: center;
+    }
+
+    .imageone {
+
+    }
+
+    .imagetwo {
+
+    }
+
+    .imagethree {
+      img {
+        margin-left: -3rem;
+      }
     }
 
   }
