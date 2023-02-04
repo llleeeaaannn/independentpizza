@@ -17,6 +17,7 @@ body {
   height: 100vh;
   padding: 3rem;
   color: $cream;
+  background-color: $black;
 
   > img {
     position: absolute;
@@ -29,7 +30,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 1;
     filter: grayscale(0.25) brightness(0.7) saturate(1.75);
   }
 
@@ -38,6 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'GT Ultra Median';
+    z-index: 2;
 
     .logo {
       font-size: $fs-md;
@@ -53,6 +55,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'GT Ultra Median';
+    z-index: 1;
 
     .landing-menu {
       @include flex-column;
@@ -85,6 +88,7 @@ body {
     @include flex-row;
     justify-content: space-between;
     align-items: flex-end;
+    z-index: 1;
 
     > p {
       font-size: $fs-sm;

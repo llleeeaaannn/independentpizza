@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div id="landing">
 
-      <img class="bg" src="landingpizza.jpeg" alt=""></img>
+      <img class="bg" src="images/landingpizza.jpeg" alt=""></img>
 
       <header>
         <span className="logo">independent pizza</span>
