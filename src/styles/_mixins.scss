@@ -1,0 +1,22 @@
+// Testing Mixins
+@mixin test-border {
+  border: 1px solid red;
+}
+
+// Layout Mixins
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: center;
+  align-items: center;
+}
