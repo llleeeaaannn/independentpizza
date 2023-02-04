@@ -1,4 +1,3 @@
-import { useEffect, useContext } from 'react';
 import Times from './times';
 
 const Landing = () => {
@@ -6,7 +5,7 @@ const Landing = () => {
   return (
     <div id="landing">
 
-      <img class="bg" src="images/landingpizza.jpeg" alt=""></img>
+      <img src="images/landingpizza.jpeg" alt="Background of two pizzas"></img>
 
       <header>
         <span className="logo">independent pizza</span>

@@ -1,6 +1,7 @@
 import { useEffect, useContext } from 'react';
 import { AppContext } from '../App';
-import Landing from '../components/landing'
+import About from '../components/about';
+import Landing from '../components/landing';
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div>
       <Landing />
+      <About />
     </div>
   )
 }

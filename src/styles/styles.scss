@@ -97,6 +97,47 @@ body {
   }
 }
 
+// About styling
+#about {
+  @include flex-column;
+  align-items: center;
+  gap: 5rem;
+  height: 300vh;
+  padding: 10rem;
+  font-family: 'Montserrat';
+
+  section {
+    @include flex-row;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+
+    > div {
+      max-width: 45%;
+    }
+
+    img {
+      border: 5px solid $black;
+    }
+
+    p {
+
+    }
+
+    strong {
+
+    }
+
+    .textone {
+      @include flex-column;
+      justify-content: space-between;
+    }
+
+  }
+
+
+}
+
 // Times Styling
 #times {
   @include flex-column;
