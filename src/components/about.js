@@ -3,6 +3,9 @@ const About = () => {
 
   return (
     <div id="about">
+
+      <h2>About us</h2>
+
       <section className="sectionone">
         <div className="imageone">
           <img src="images/restaurant.jpg" alt="The restaurant"></img>
