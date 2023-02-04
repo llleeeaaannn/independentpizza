@@ -99,6 +99,7 @@ body {
 
 // About styling
 #about {
+  position: relative;
   @include flex-column;
   padding: 7.5rem 10rem;
   font-family: 'Montserrat';
@@ -178,8 +179,6 @@ body {
     }
 
   }
-
-
 }
 
 // Times Styling
