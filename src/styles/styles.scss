@@ -183,7 +183,40 @@ body {
 
 // Footer Styling
 #footer {
-  
+  @include flex-row;
+  justify-content: space-between;
+  padding: 3rem;
+  font-size: $fs-sm;
+
+  .left {
+    @include flex-column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .right {
+    @include flex-column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+// Socials styling
+#socials {
+  @include flex-row;
+  gap: 0.5rem;
+
+  svg {
+    fill: $black;
+    color: $black;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  svg:hover {
+    transform: scale(1.1);
+  }
 }
 
 // Times Styling
