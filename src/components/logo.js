@@ -1,9 +1,7 @@
 const Logo = () => {
 
   return (
-    <nav id="logo">
-
-    </nav>
+    <span id="logo">independent pizza</span>
   )
 }
 

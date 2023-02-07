@@ -1,3 +1,4 @@
+import Logo from './logo';
 import Times from './times';
 
 const Landing = () => {
@@ -8,7 +9,7 @@ const Landing = () => {
       <img src="images/landingpizza.jpeg" alt="Background of two pizzas"></img>
 
       <header>
-        <span className="logo">independent pizza</span>
+        <Logo />
         <span className="book">Book Now</span>
       </header>
 
