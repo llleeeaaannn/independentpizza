@@ -212,10 +212,12 @@ body {
     color: $black;
     width: 3rem;
     height: 3rem;
+    @include trans-ease;
   }
 
   svg:hover {
     transform: scale(1.1);
+    @include trans-ease;
   }
 }
 
