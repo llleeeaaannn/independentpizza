@@ -101,7 +101,7 @@ body {
 #about {
   position: relative;
   @include flex-column;
-  padding: 7.5rem 10rem;
+  padding: 5rem 10%;
   font-family: 'Montserrat';
 
   // Scroll all text elements upwards with parallax scrolling
