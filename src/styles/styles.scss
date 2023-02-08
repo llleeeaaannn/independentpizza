@@ -1,5 +1,9 @@
 @import 'reset', 'fonts', 'mixins', 'variables';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $black;
   font-size: $fs-base;
@@ -46,7 +50,30 @@ body {
     }
 
     .book {
+      color: $cream;
       font-size: $fs-md;
+      text-decoration: none;
+    }
+
+    /* Animated Underline Styling */
+    .book {
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .book:after {
+      display: block;
+      content: '';
+      border-bottom: 1px solid $cream;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      transform-origin: 100% 50%;
+    }
+
+    .book:hover:after {
+      transform: scaleX(1);
+      transform-origin: 0 50%;
     }
   }
 

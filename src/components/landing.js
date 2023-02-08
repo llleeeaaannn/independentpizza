@@ -11,13 +11,13 @@ const Landing = () => {
 
       <header>
         <Logo />
-        <span className="book">Book Now</span>
+        <Link to="/reservations" className="book">Book Now</Link>
       </header>
 
       <div>
         <div className="landing-menu">
           <Link to="/foodmenu">menu</Link>
-          <Link to="/about">about us</Link>
+          <a href="#about">about us</a>
           <Link to="/reservations">reservations</Link>
           <Link to="/contact">contact</Link>
           <Link to="/faq">faq</Link>
