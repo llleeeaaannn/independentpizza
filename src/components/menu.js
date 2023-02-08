@@ -1,5 +1,4 @@
 import Logo from './logo';
-import Times from './times';
 import Close from './close';
 import Socials from './socials';
 
@@ -23,7 +22,11 @@ const Menu = () => {
           </div>
 
           <div className="menu-info">
-            <Times />
+            <span>(01) 830 2044</span>
+            <span>28 Drumcondra Rd Lower</span>
+            <span>Drumcondra, Dublin 9</span>
+            <span>D09 X034</span>
+            <a href="https://goo.gl/maps/EFwraScp3MWDR8dN8" rel="noopener noreferrer" target="_blank">SEE MAP</a>
           </div>
         </div>
       </div>

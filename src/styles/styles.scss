@@ -259,12 +259,10 @@ body {
 
       .menu-info {
         @include flex-column;
-        justify-content: space-between;
         align-items: flex-end;
 
-        .address {
-          @include flex-column;
-          align-items: flex-end;
+        a {
+          margin-top: auto;
         }
       }
     }
