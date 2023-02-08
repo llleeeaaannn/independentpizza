@@ -222,7 +222,7 @@ body {
 
     #close {
       fill: $cream;
-      margin-left: 0.5rem;
+      margin-left: 2rem;
 
       &:hover {
         transform: rotate(180deg);
@@ -261,8 +261,28 @@ body {
         @include flex-column;
         align-items: flex-end;
 
+        span {
+          font-family: 'Montserrat';
+          font-size: $fs-base;
+          margin-bottom: 0.2rem;
+        }
+
         a {
+          font-size: $fs-base;
+          font-family: 'Montserrat';
+          text-decoration: none;
           margin-top: auto;
+
+          svg {
+            fill: $cream;
+            width: 3rem;
+            height: 3rem;
+
+            &:hover {
+              transform: scale(1.1);
+              @include trans-ease;
+            }
+          }
         }
       }
     }
