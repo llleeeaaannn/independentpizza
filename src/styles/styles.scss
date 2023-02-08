@@ -202,6 +202,26 @@ body {
   }
 }
 
+// Menu styling
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: $cream;
+  background-color: $black;
+}
+
+// Navbar Styling
+#navbar {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 3rem;
+}
+
 // Socials styling
 #socials {
   @include flex-row;
@@ -218,6 +238,16 @@ body {
   svg:hover {
     transform: scale(1.1);
     @include trans-ease;
+  }
+}
+
+// Hamburger styling
+#hamburger {
+  width: 3rem;
+  height: 3rem;
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
