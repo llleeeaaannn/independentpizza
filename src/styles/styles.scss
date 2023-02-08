@@ -251,6 +251,8 @@ body {
       .menu-info {
         @include flex-column;
         align-items: flex-end;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
 
         span {
           font-family: 'Montserrat';
