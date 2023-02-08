@@ -11,6 +11,27 @@ const Faq = () => {
     <>
       <Navbar />
       <div id="faq">
+        <div>
+          <div className="f">
+            <div className="q">HMMMMMMMMMMM</div>
+            <div className="a active">THIS IS THE ANSWER</div>
+          </div>
+
+          <div className="f">
+            <div className="q">HMMMMMMMMMMM</div>
+            <div className="a">THIS IS THE ANSWER</div>
+          </div>
+
+          <div className="f">
+            <div className="q">HMMMMMMMMMMM</div>
+            <div className="a">THIS IS THE ANSWER</div>
+          </div>
+
+          <div className="f">
+            <div className="q">HMMMMMMMMMMM</div>
+            <div className="a">THIS IS THE ANSWER</div>
+          </div>
+        </div>
       </div>
       { menu && <Menu /> }
     </>

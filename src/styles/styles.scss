@@ -231,6 +231,40 @@ body {
   }
 }
 
+// FAQ styling
+#faq {
+  padding: 5rem;
+
+  > div {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+  .q {
+    padding: 0.5rem;
+    border: 1px solid blue;
+  }
+
+  .a {
+    // padding: 0.5rem;
+    // border: 1px solid green;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+
+    &.active {
+      max-height: 500;
+      overflow: visible;
+      transition: max-height 0.25s ease-out;
+    }
+  }
+
+  .a.active {
+    max-height: 500;
+    transition: max-height 0.25s ease-out;
+  }
+}
+
 // Footer Styling
 #footer {
   @include flex-row;
