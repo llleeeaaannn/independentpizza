@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from './logo';
 import Times from './times';
 
@@ -15,11 +16,11 @@ const Landing = () => {
 
       <div>
         <div className="landing-menu">
-          <span>menu</span>
-          <span>about us</span>
-          <span>reservations</span>
-          <span>contact</span>
-          <span>faq</span>
+          <Link to="/foodmenu">menu</Link>
+          <Link to="/about">about us</Link>
+          <Link to="/reservations">reservations</Link>
+          <Link to="/contact">contact</Link>
+          <Link to="/faq">faq</Link>
         </div>
 
         <div className="landing-name">

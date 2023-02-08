@@ -25,9 +25,7 @@ const Menu = () => {
             <span>28 Drumcondra Rd Lower</span>
             <span>Drumcondra, Dublin 9</span>
             <span>D09 X034</span>
-            <div>
-              <Socials />
-            </div>
+            <Socials />
           </div>
         </div>
       </div>

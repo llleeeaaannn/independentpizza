@@ -39,14 +39,6 @@ const About = () => {
           <p>Our pizza dough is freshly made every day, on the premises, using just five ingredients: <strong> Flour, water, yeast, salt</strong> and <strong>sugar.</strong></p>
         </div>
       </section>
-
-      <section>
-        <div>
-        </div>
-
-        <div>
-        </div>
-      </section>
     </div>
   )
 }

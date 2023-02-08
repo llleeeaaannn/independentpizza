@@ -3,18 +3,18 @@ import Navbar from '../components/navbar';
 import { useContext } from 'react';
 import { AppContext } from '../App';
 
-const Contact = () => {
+const Reservations = () => {
 
   const { menu } = useContext(AppContext);
 
   return (
     <>
       <Navbar />
-      <div id="contact">
+      <div id="reservations">
       </div>
       { menu && <Menu /> }
     </>
   )
 }
 
-export default Contact;
+export default Reservations;
