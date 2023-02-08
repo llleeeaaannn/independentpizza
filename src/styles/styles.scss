@@ -235,33 +235,54 @@ body {
 #faq {
   padding: 5rem;
 
-  > div {
-    width: 100%;
-    border: 1px solid red;
+  a {
+    color: #282425!important;
   }
 
-  .q {
-    padding: 0.5rem;
-    border: 1px solid blue;
+  ul.nav.nav-tabs > li{
+  	display: inline-block;
+  	line-height: 50px;
+  	height: 100%;
+  	text-transform:uppercase;
   }
 
-  .a {
-    // padding: 0.5rem;
-    // border: 1px solid green;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.15s ease-out;
+  ul.nav.nav-tabs > li a{
+  	display:block;
+  	padding:15px;
+  	color: #282425!important;
 
-    &.active {
-      max-height: 500;
-      overflow: visible;
-      transition: max-height 0.25s ease-out;
-    }
   }
 
-  .a.active {
-    max-height: 500;
-    transition: max-height 0.25s ease-out;
+  ul.nav.nav-tabs > li a:hover, ul.nav.nav-tabs > li:hover{
+  	background:	#FB282F;
+  	color:#fff!important;
+  	text-decoration: none!important;
+  }
+
+  ul.nav.nav-tabs > li a.active{
+  	background:	#282425;
+  	color:#fff!important;
+  	text-decoration: none!important;
+  }
+
+  .card-header {
+    background-color: rgb(245,245,245,0.3)!important;
+  	border-radius:0!important;
+  }
+
+  .card {
+    border-radius:0!important;
+  }
+
+  .card > .card-header a::before {
+      font-family: fontawesome;
+      content: "\f067 ";
+      color: #282425;
+      float: right;
+      margin-right: 15px;
+      font-weight: 400;
+      position: absolute;
+      right: 0;
   }
 }
 
