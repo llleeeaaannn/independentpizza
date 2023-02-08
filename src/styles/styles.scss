@@ -204,7 +204,7 @@ body {
 
 // Menu styling
 #menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: grid;
@@ -217,21 +217,12 @@ body {
   nav {
     @include flex-row;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding: 2rem 3rem;
 
     #close {
       fill: $cream;
-      margin-left: 2rem;
-
-      &:hover {
-        transform: rotate(180deg);
-        @include trans-ease(750ms);
-      }
-    }
-
-    #logo {
-      margin-right: auto;
     }
   }
 
