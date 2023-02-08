@@ -207,10 +207,68 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
   width: 100%;
   height: 100vh;
   color: $cream;
   background-color: $black;
+
+  nav {
+    @include flex-row;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 3rem;
+
+    #close {
+      fill: $cream;
+      margin-left: 0.5rem;
+
+      &:hover {
+        transform: rotate(180deg);
+        @include trans-ease(750ms);
+      }
+    }
+
+    #logo {
+      margin-right: auto;
+    }
+  }
+
+  .content {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 7.5% 10% 7.5%;
+
+    .inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+
+      .menu-nav {
+        @include flex-column;
+
+        span {
+          font-size: $fs-xxl;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .menu-info {
+        @include flex-column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .address {
+          @include flex-column;
+          align-items: flex-end;
+        }
+      }
+    }
+  }
 }
 
 // Navbar Styling
@@ -228,21 +286,38 @@ body {
   gap: 0.5rem;
 
   svg {
-    fill: $black;
-    color: $black;
+    fill: $cream;
+    color: $cream;
     width: 3rem;
     height: 3rem;
     @include trans-ease;
+
+    &.cream {
+      fill: $cream;
+      color: $cream;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      @include trans-ease;
+    }
   }
 
-  svg:hover {
-    transform: scale(1.1);
-    @include trans-ease;
-  }
+
 }
 
 // Hamburger styling
 #hamburger {
+  width: 3rem;
+  height: 3rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Close styling
+#close {
   width: 3rem;
   height: 3rem;
 
