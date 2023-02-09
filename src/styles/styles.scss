@@ -284,6 +284,15 @@ body {
       padding-top: 0.5rem;
     }
   }
+
+  .times {
+    @include flex-column;
+    gap: 0.25rem;
+  }
+
+  a {
+    color: $black;
+  }
 }
 
 // Footer Styling

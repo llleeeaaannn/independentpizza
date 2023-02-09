@@ -14,10 +14,10 @@ const Faq = () => {
   const a1 = <p>Our menu consists primarily of pizza but we also serve options including burgers and salads. Our pizzas are also available with a gluten-free base. Of course, seasonal starters and desserts are served year round too. You can find our menu <Link to="/menu">here</Link></p>
 
   const q2 = <span>What are our opening hours?</span>
-  const a2 = <div>
-                <span>Monday & Tuesday: Closed</span><br/>
-                <span>Wednesday & Thursday: 16:00 - 21:00</span><br/>
-                <span>Friday & Saturday: 12:00 - 22:00</span><br/>
+  const a2 = <div className="times">
+                <span>Monday & Tuesday: Closed</span>
+                <span>Wednesday & Thursday: 16:00 - 21:00</span>
+                <span>Friday & Saturday: 12:00 - 22:00</span>
                 <span>Sunday: 12:00 - 21:00</span>
               </div>
   const q3 = <span>Do we have vouchers?</span>
