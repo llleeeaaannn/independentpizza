@@ -233,18 +233,21 @@ body {
 
 // FAQ styling
 #faq {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  padding: 5rem;
+  @include flex-column;
+  gap: 1rem;
+  padding: 2.5rem 15%;
 
   .questions {
-    border: 1px solid red;
   }
 
   .heading {
     @include flex-column;
     align-items: flex-end;
-    border: 1px solid blue;
+
+    h2 {
+      font-size: $fs-xxl;
+      font-family: 'GT Ultra Median';
+    }
 
     span {
       text-align: right;
@@ -252,7 +255,6 @@ body {
   }
 
   .f {
-    width: 50rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid $black;
@@ -280,7 +282,6 @@ body {
       stroke-width: 2;
       transform: rotate(45deg);
       @include trans-ease;
-      // border: 1px solid black;
 
       &.open {
         transform: rotate(0deg);
@@ -290,18 +291,19 @@ body {
   }
 
   .a {
-    p {
-      padding-top: 0.5rem;
+    p,
+    div {
+      padding-top: 0.25rem;
+    }
+
+    a {
+      color: $black;
     }
   }
 
   .times {
     @include flex-column;
     gap: 0.25rem;
-  }
-
-  a {
-    color: $black;
   }
 }
 

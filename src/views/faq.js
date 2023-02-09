@@ -34,6 +34,11 @@ const Faq = () => {
     <>
       <Navbar />
       <div id="faq">
+        <div className="heading">
+          <h2>FAQ</h2>
+          <span>If you have any other questions, please call us at (01) 830 2044</span>
+        </div>
+
         <div className="questions">
           <Question questionText={q1} answerText={a1} />
 
@@ -42,11 +47,6 @@ const Faq = () => {
           <Question questionText={q3} answerText={a3} />
 
           <Question questionText={q4} answerText={a4} />
-        </div>
-
-        <div className="heading">
-          <h2>FAQ</h2>
-          <span>If you have any other questions, please call us at (01) 830 2044</span>
         </div>
       </div>
       <Footer />
