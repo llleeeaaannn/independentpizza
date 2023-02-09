@@ -234,17 +234,27 @@ body {
 // FAQ styling
 #faq {
   display: grid;
-  place-items: center;
+  grid-template-columns: 4fr 1fr;
   padding: 5rem;
 
-  .inner {
-    // border: 1px solid red;
+  .questions {
+    border: 1px solid red;
+  }
+
+  .heading {
+    @include flex-column;
+    align-items: flex-end;
+    border: 1px solid blue;
+
+    span {
+      text-align: right;
+    }
   }
 
   .f {
     width: 50rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid $black;
   }
 

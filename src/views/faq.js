@@ -4,6 +4,7 @@ import { useState, useContext } from 'react';
 import AnimateHeight from 'react-animate-height';
 import Menu from '../components/menu';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import Question from '../components/question';
 
 const Faq = () => {
@@ -11,7 +12,7 @@ const Faq = () => {
   const { menu } = useContext(AppContext);
 
   const q1 = <span>What type of cuisine do we serve?</span>
-  const a1 = <p>Our menu consists primarily of pizza but we also serve options including burgers and salads. Our pizzas are also available with a gluten-free base. Of course, seasonal starters and desserts are served year round too. You can find our menu <Link to="/menu">here</Link></p>
+  const a1 = <p>Our menu consists primarily of pizza but we also serve options including burgers and salads. Our pizzas are also available with a gluten-free base. Of course, seasonal starters and desserts are served year round too. You can find our menu <Link to="/menu">here.</Link></p>
 
   const q2 = <span>What are our opening hours?</span>
   const a2 = <div className="times">
@@ -33,8 +34,7 @@ const Faq = () => {
     <>
       <Navbar />
       <div id="faq">
-        <div className="inner">
-
+        <div className="questions">
           <Question questionText={q1} answerText={a1} />
 
           <Question questionText={q2} answerText={a2} />
@@ -43,7 +43,13 @@ const Faq = () => {
 
           <Question questionText={q4} answerText={a4} />
         </div>
+
+        <div className="heading">
+          <h2>FAQ</h2>
+          <span>If you have any other questions, please call us at (01) 830 2044</span>
+        </div>
       </div>
+      <Footer />
       { menu && <Menu /> }
     </>
   )
