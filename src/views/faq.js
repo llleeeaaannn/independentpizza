@@ -24,8 +24,11 @@ const Faq = () => {
       <div id="faq">
         <div className="inner">
           <div className="f">
-            <div className={height1 ? "q open" : "q"} onClick={() => setHeight1(height1 === closed ? open : closed)}>
-              <h2>This is the question</h2>
+            <div className="q" onClick={() => setHeight1(height1 === closed ? open : closed)}>
+              <h2>This is the question, This is the question, This is the questionThis is the question</h2>
+              <svg className={height1 ? "open" : ""} viewBox="0 0 72 72">
+                <path d="m17.5 17.5l37 37m0-37l-37 37"/>
+              </svg>
             </div>
 
             <AnimateHeight className="a" height={height1} duration={500}>
