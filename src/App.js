@@ -20,7 +20,7 @@ function App() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/foodmenu' element={<FoodMenu />} />
+        <Route exact path='/menu' element={<FoodMenu />} />
         <Route exact path='/reservations' element={<Reservations />} />
         <Route path='*' element={<NotFound />} />
       </Routes>

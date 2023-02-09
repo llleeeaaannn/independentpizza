@@ -1,25 +1,41 @@
+import { AppContext } from '../App';
+import { Link } from 'react-router-dom';
+import { useState, useContext } from 'react';
+import AnimateHeight from 'react-animate-height';
 import Menu from '../components/menu';
 import Navbar from '../components/navbar';
-import { useState, useContext } from 'react';
-import { AppContext } from '../App';
-import AnimateHeight from 'react-animate-height';
 import Question from '../components/question';
-import faqData from '../data/faqData';
 
 const Faq = () => {
 
   const { menu } = useContext(AppContext);
+
+  const q1 = <span>What type of cuisine do we serve?</span>
+  const a1 = <p>Our menu consists primarily of pizza but we also serve options including burgers and salads. Our pizzas are also available with a gluten-free base. Of course, seasonal starters and desserts are served year round too. You can find our menu <Link to="/menu">here</Link></p>
+
+  const q2 = <span></span>
+  const a2 = <p></p>
+
+  const q3 = <span></span>
+  const a3 = <p></p>
+
+  const q4 = <span></span>
+  const a4 = <p></p>
+
+  const q5 = <span></span>
+  const a5 = <p></p>
 
   return (
     <>
       <Navbar />
       <div id="faq">
         <div className="inner">
-          <Question questionText="This is the questionnnn" answerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
 
-          <Question questionText={<>faqData[0].q</>} answerText={<>What type of <strong>cuisine</strong> do we serve?</>} />
+          <Question questionText={q1} answerText={a1} />
 
-          <Question questionText="This is the lo lolo nvjusfbjb fweruuhvbweuh sjhgugeu fei" answerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500st of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s t of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." />
+          <Question questionText={q1} answerText={a1} />
+
+          <Question questionText={q1} answerText={a1} />
         </div>
       </div>
       { menu && <Menu /> }
