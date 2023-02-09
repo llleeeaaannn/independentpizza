@@ -253,7 +253,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
+    cursor: pointer;
 
     h3 {
       font-size: $fs-md;
