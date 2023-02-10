@@ -27,8 +27,11 @@ const Faq = () => {
   const q4 = <span>Can you come to us with your dog?</span>
   const a4 = <p>Unfortunately, pets aren't allowed in our restaurant.</p>
 
-  const q5 = <span></span>
-  const a5 = <p></p>
+  const q5 = <span>Do we offer a children's menu?</span>
+  const a5 = <p>Yes, we offer numerous options specifically for children on our menu.</p>
+
+  const q6 = <span>Do we have vegetarian options?</span>
+  const a6 = <p>We have menu vegetarian dishes, both pizzas and other.</p>
 
   return (
     <>
@@ -45,6 +48,10 @@ const Faq = () => {
           <Question questionText={q2} answerText={a2} />
 
           <Question questionText={q3} answerText={a3} />
+
+          <Question questionText={q5} answerText={a5} />
+
+          <Question questionText={q6} answerText={a6} />
 
           <Question questionText={q4} answerText={a4} />
         </div>
