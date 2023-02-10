@@ -1,8 +1,17 @@
 import Logo from './logo';
 import Close from './close';
 import Socials from './socials';
+import { useContext } from 'react';
+import { AppContext } from '../App';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
+
+  const { menu, setMenu } = useContext(AppContext);
+
+  const closeMenu = () => {
+    setMenu(false)
+  }
 
   return (
     <div id="menu">
@@ -13,11 +22,11 @@ const Menu = () => {
       <div className="content">
         <div className="inner">
           <div className="menu-nav">
-            <span>menu</span>
-            <span>about us</span>
-            <span>reservations</span>
-            <span>contact</span>
-            <span>faq</span>
+            <Link to="/menu" onClick={closeMenu}>menu</Link>
+            <Link to="/" onClick={closeMenu}>about us</Link>
+            <Link to="/reservations" onClick={closeMenu}>reservations</Link>
+            <Link to="/contact" onClick={closeMenu}>contact</Link>
+            <Link to="/faq" onClick={closeMenu}>faq</Link>
           </div>
 
           <div className="menu-info">

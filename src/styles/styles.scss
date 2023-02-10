@@ -160,6 +160,10 @@ body {
     margin-bottom: 5rem;
   }
 
+  > :last-child {
+    margin-bottom: 0rem;
+  }
+
   h2 {
     // Make this scroll across with Parallax
     // Make this scroll across with Parallax
@@ -376,9 +380,11 @@ body {
       .menu-nav {
         @include flex-column;
 
-        span {
+        a {
+          color: $cream;
           font-size: $fs-xxl;
           margin-bottom: 0.5rem;
+          text-decoration: none;
         }
       }
 
